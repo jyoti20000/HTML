@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templet</title>
+  </head>
+  <body>
+    <p>
+      ⛔ Your browser doesn't support <code>shadowrootmode</code> attribute yet.
+    </p>
+    <h2><em>templet tag</em></h2>
+    <p>
+      <em
+        >The template tag is used as a container to hold some HTML content
+        hidden from the user when the page loads. The content inside template
+        can be rendered later with a JavaScript.
+      </em>
+    </p>
+    <template id="myTemplate">
+      <!--first we create temporary blue print which is not display on webpage to display this content we need to use js-->
+      <div>
+        <h2>This is my first Product</h2>
+        <p>This is my image</p>
+      </div>
+    </template>
+
+    <!-- <h1>The template Element</h1>
+
+    <p>
+      Click the button below to display the hidden content from the template
+      element.
+    </p>
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+      <h2>Flower</h2>
+      <img src="../assets/img.jpg" width="214" height="204" />
+    </template> -->
+  
+</body>
+  <script>
+    var template = document.getElementById("myTemplate");
+    var product1 = document.importNode(template.content, true);
+    product1.querySelector("h2").textContent = "Product 1";
+    var product2 = document.importNode(template.content, true);
+    product2.querySelector("h2").textContent = "Product 2";
+    document.body.appendChild(product1);
+    document.body.appendChild(product2);
+  </script>
+</html>

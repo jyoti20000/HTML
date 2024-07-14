@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+</head>
+<style>
+    body {
+        background-color: pink;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th {
+        color: rgb(81, 0, 255);
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: 1px solid blue;
+    }
+
+    td {
+        color: brown;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        border: 1px solid blue;
+        padding: 20px
+    }
+</style>
+
+<body>
+    <h1>All about Tables</h1>
+    <br>
+    <caption><u>My first Table</u></caption>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jyoti</td>
+                <td>Sharma</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Gaurav</td>
+                <td>Sharma</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Saurabh</td>
+                <td>Sharma</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Anshika</td>
+                <td>Sharma</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Footer colspan</td>
+            </tr>
+            <tr>
+                <td rowspan="3">footer rowspan</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    <caption><u><b><em>My Second Table</b></em></u></caption>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jyoti</td>
+                <td rowspan="2">Sharma</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Gaurav</td>
+                <!-- <td>Sharma</td> -->
+                <td>22</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Saurabh</td>
+                <td>Sharma</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <!-- <td>Saurabh</td> -->
+                <td>Kapadiya</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Arti</td>
+                <td>Singh</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td colspan="2">Auradha</td>
+                <!-- <td>Mall</td> -->
+                <td>26</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Footer colspan</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+</body>
+
+</html>

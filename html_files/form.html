@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1><em>How to create a form</em></h1>
+    <form action="/actiondata" method="get/post" target="_blank" autocomplete="off" enctype="multipart/form-data">  <!--We can write autocomplete attribute here or in below input type element -->
+        <lable for="first">Username:</lable>
+        <input type="text" id="first" name="username" placeholder="Enter your name" required>
+        <br><br>
+        <lable> Email:</lable>
+        <input type="text" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <lable>Password:</lable>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        <lable>Phone Number:</lable>
+        <input type="tel" name="phone" max="10" placeholder="Enter your number">
+        <br><br>
+        <lable>Address:</lable>
+        <textarea name="address" row="5" placeholder="Enter your address" required
+            style="width:100px; height:100px; max-width:150px; max-height:300px;"></textarea>
+        </textarea>
+        <br><br>
+        <label>What is your gender :</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br><br>
+        <label>Your hobbies : </label>
+        <input type="checkbox" name="check1" value="Cricket">Cricket
+        <input type="checkbox" name="check2" value="Singing">Singing
+        <input type="checkbox" name="check1" value="Dancing">Dancing
+        <input type="checkbox" name="check1" value="Playing">Playing
+        <input type="checkbox" name="check1" value="Chess">Chess
+        <br><br>
+        <lable>Select your Cource:</lable>
+        <select name="usercource" size="1">  <!--size="2" attribute give two value in your option accordin to your selected no-->
+            <option>Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br><br>
+        <button typw="button">Don't Click Me</button>
+        <input type="submit" value="Signup">
+         <br><br><br><br><br>
+
+         <!-- Fielf set Example -->
+         <h2><em><u>This is example of fieldset</u></em></h2>
+         <p><em>The fieldset tag is used to group related elements in a form.
+            The fieldset tag draws a box around the related elements.
+            Tip: The legend tag is used to define a caption for the fieldset element.
+         </em></p>
+         <fieldset>
+            <legend style="color:hotpink; border: aqua 2px solid;">Login</legend>
+            <input type="text" name="email" placeholder="Enter yor mail" list="myname">
+            <datalist id="myname">
+                <option value="Jyoti Sharma"></option>
+                <option value="Gaurav Sharma"></option>
+                <option value="Saurabh Sharma"></option>
+                <option value="Anshika Sharma"></option>
+                <option value="Akriti Sharma"></option>
+            </datalist>
+            <input type="text" name="password" placeholder="Enter yor pass">
+            <input type="submit" value="login" >
+
+         </fieldset>
+    </form>
+</body>
+</html>
